@@ -1,0 +1,138 @@
+<!-- Sección Contacto y Formulario -->
+    <section id="contacto" class="py-16 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Datos de Contacto Directos -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-chocolate-600 font-semibold text-sm tracking-wider uppercase">¡Conectemos!</span>
+                        <h2 class="text-3xl font-bold text-chocolate-900 mt-1">Contacto y Reservas</h2>
+                        <p class="text-chocolate-600 mt-2 text-sm leading-relaxed">
+                            ¿Tienes dudas sobre las tarifas o quieres agendar una cita para tu peludito? Completa el formulario o escríbenos directamente por WhatsApp.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        
+                        <!-- Ubicación -->
+                        <div class="flex items-start space-x-4 p-4 bg-chocolate-50 rounded-2xl border border-chocolate-200">
+                            <div class="w-10 h-10 bg-chocolate-600 text-white rounded-xl flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-chocolate-800 text-sm">Ubicación Física</h4>
+                                <p class="text-xs sm:text-sm text-chocolate-600">Distrito de Chame Cabecera, Panamá Oeste</p>
+                            </div>
+                        </div>
+
+                        <!-- Teléfono / WhatsApp -->
+                        <div class="flex items-start space-x-4 p-4 bg-chocolate-50 rounded-2xl border border-chocolate-200">
+                            <div class="w-10 h-10 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-chocolate-800 text-sm">Celular / WhatsApp</h4>
+                                <a href="https://wa.me/50769217896" target="_blank" class="text-xs sm:text-sm text-chocolate-700 hover:text-emerald-700 font-medium underline">
+                                    +507 6921-7896
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Correos Electrónicos -->
+                        <div class="flex items-start space-x-4 p-4 bg-chocolate-50 rounded-2xl border border-chocolate-200">
+                            <div class="w-10 h-10 bg-chocolate-600 text-white rounded-xl flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-chocolate-800 text-sm">Correo Electrónico</h4>
+                                <p class="text-xs sm:text-sm text-chocolate-600">contacto@patasfelices.com</p>
+                                <p class="text-xs text-chocolate-500">canamarquez05@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="flex items-start space-x-4 p-4 bg-chocolate-50 rounded-2xl border border-chocolate-200">
+                            <div class="w-10 h-10 bg-chocolate-600 text-white rounded-xl flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-chocolate-800 text-sm">Redes Sociales</h4>
+                                <p class="text-xs sm:text-sm text-chocolate-600">@patasfelicespanama</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Formulario Interactivo -->
+                <div class="lg:col-span-7">
+                    <div class="bg-chocolate-50/80 p-6 sm:p-8 rounded-3xl border border-chocolate-200 shadow-sm">
+                        <h3 class="text-xl font-bold text-chocolate-900 mb-2">Solicitar Cotización o Cita 🐾</h3>
+                        <p class="text-xs text-chocolate-600 mb-6">Completa tus datos y te responderemos a la brevedad posible.</p>
+
+                        <!-- Formulario -->
+                        <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-chocolate-800 mb-1">Nombre del dueño *</label>
+                                    <input type="text" id="owner-name" required placeholder="Tu nombre completo" class="w-full px-4 py-2.5 rounded-xl border border-chocolate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-chocolate-500">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-chocolate-800 mb-1">Teléfono / WhatsApp *</label>
+                                    <input type="tel" id="owner-phone" required placeholder="Ej. 6921-7896" class="w-full px-4 py-2.5 rounded-xl border border-chocolate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-chocolate-500">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-chocolate-800 mb-1">Nombre de la Mascota *</label>
+                                    <input type="text" id="pet-name" required placeholder="Ej. Luna, Max" class="w-full px-4 py-2.5 rounded-xl border border-chocolate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-chocolate-500">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-chocolate-800 mb-1">Tipo de Mascota *</label>
+                                    <select id="pet-type" required class="w-full px-4 py-2.5 rounded-xl border border-chocolate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-chocolate-500">
+                                        <option value="">Selecciona tipo...</option>
+                                        <option value="Perro">Perro 🐕</option>
+                                        <option value="Gato">Gato 🐱</option>
+                                        <option value="Otro">Otro animal de compañía</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-chocolate-800 mb-1">Servicio Requerido *</label>
+                                <select id="service-select" required class="w-full px-4 py-2.5 rounded-xl border border-chocolate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-chocolate-500">
+                                    <option value="">Selecciona un servicio...</option>
+                                    <option value="Paseo 30 minutos ($5.00)">Paseo de perros (30 min - $5.00)</option>
+                                    <option value="Baño básico ($10.00)">Baño y aseo básico ($10.00)</option>
+                                    <option value="Cuidado por día ($15.00)">Cuidado por día ($15.00)</option>
+                                    <option value="Hospedaje ($20.00 / noche)">Hospedaje nocturno ($20.00/noche)</option>
+                                    <option value="Alimentación personalizada">Alimentación personalizada</option>
+                                    <option value="Corte de pelo y estética">Corte de pelo y estética</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-chocolate-800 mb-1">Mensaje o Notas Especiales</label>
+                                <textarea id="message" rows="3" placeholder="Ej. Requerimientos especiales de comida, temperamento o fecha deseada..." class="w-full px-4 py-2.5 rounded-xl border border-chocolate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-chocolate-500"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-chocolate-600 hover:bg-chocolate-700 text-white font-semibold py-3 px-6 rounded-xl transition shadow flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-paper-plane"></i> Solicitar servicio por WhatsApp
+                            </button>
+
+                        </form>
+
+                        <div id="form-feedback" class="hidden mt-4 p-4 bg-emerald-100 border border-emerald-300 text-emerald-800 rounded-xl text-sm text-center">
+                            ¡Gracias por tu solicitud! Redirigiendo a WhatsApp con los detalles de tu cita...
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
