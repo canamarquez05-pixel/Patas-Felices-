@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Felices | Cuidado, Hospedaje y Estética para Mascotas</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        chocolate: {
+                            50: '#ccffcc' ,
+                            100: '#f0e68c',
+                            200: '#ff8c00',
+                            300: '#dad485',
+                            400: '#B68856',
+                            500: '#a06d3bef',
+                            600: '#8B5E3C',
+                            700: '#6F4E37',
+                            800: '#000000',
+                            900: '#800000',
+                        },
+                        cream: '#f8f8f8',
+                        warmAccent: '#E09F3E'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class=#font-sans antialiased selection:bg-chocolate-300">
+
+    <!-- Header / Navegación Fija -->
+    <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur-md border-b border-chocolate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#inicio" class="flex items-center space-x-3 group">
+                   
+                     <img src="LOGO jpg.png" alt="Logo Patas Felices" class="h-14 w-auto rounded-full border border-chocolate-300 shadow-sm transition group-hover:scale-105">
+                    <div>
+                        <span class="text-2xl font-bold tracking-tight text-chocolate-700 block leading-tight">Patas Felices</span>
+                        <span class="text-xs text-chocolate-500 font-medium tracking-wide">Panamá Oeste</span>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex space-x-6 text-sm font-semibold text-chocolate-800">
+                    <a href="#inicio" class="hover:text-chocolate-500 transition-colors py-1">Inicio</a>
+                    <a href="#servicios" class="hover:text-chocolate-500 transition-colors py-1">Servicios</a>
+                    <a href="#precios" class="hover:text-chocolate-500 transition-colors py-1">Planes y Precios</a>
+                    <a href="#nosotros" class="hover:text-chocolate-500 transition-colors py-1">Sobre Nosotros</a>
+                    <a href="#galeria" class="hover:text-chocolate-500 transition-colors py-1">Galería</a>
+                    <a href="#contacto" class="hover:text-chocolate-500 transition-colors py-1">Contacto</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center">
+                    <a href="#contacto" class="bg-chocolate-600 hover:bg-chocolate-700 text-white font-medium px-4 py-2.5 rounded-full text-sm shadow-sm hover:shadow transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-paw text-xs"></i> Solicitar Servicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Inicio / Hero Banner -->
+    <section id="inicio" class="relative py-12 md:py-20 overflow-hidden bg-gradient-to-b from-cream via-chocolate-50 to-chocolate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-chocolate-100/60 border border-chocolate-300/50 text-chocolate-800 text-xs sm:text-sm font-medium">
+                        <span class="text-warmAccent">★</span> Cuidado con amor en Chame, Panamá Oeste
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-chocolate-800 tracking-tight leading-tight">
+                        Su felicidad es nuestra prioridad <br>
+                        <span class="text-chocolate-600 font-semibold text-2xl sm:text-4xl block mt-2">Cuidamos a tu mascota como parte de la familia</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-chocolate-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Ofrecemos atención dedicada, personalizada y afectuosa para perros y gatos en Chame Cabecera.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="bg-chocolate-100 p-4 rounded-3xl shadow-xl border border-chocolate-700">
+                        <img src="../fotos/SAM.jpg"> 
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-16 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-chocolate-600 font-semibold text-sm tracking-wider uppercase">Lo que ofrecemos</span>
+                <h2 class="text-3xl font-bold text-chocolate-900 mt-1">Servicios diseñados para su bienestar</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-chocolate-50 p-6 rounded-2xl border border-chocolate-200 shadow-sm">
+                    <div class="text-3xl mb-3">🐕</div>
+                    <h3 class="text-xl font-bold text-chocolate-800 mb-2">Paseo de Perros</h3>
+                    <p class="text-chocolate-800 text-sm"> Caminatas diarias en entornos seguros y adaptadasal nivel de energia de cada perro.</p>
+                </div>
+                <div class="bg-chocolate-50 p-6 rounded-2xl border border-chocolate-200 shadow-sm">
+                    <div class="text-3xl mb-3">🛁</div>
+                    <h3 class="text-xl font-bold text-chocolate-800 mb-2">Baño y Aseo</h3>
+                    <p class="text-chocolate-800 text-sm">Limpieza con agua tibia, productos suaves para su piel y secado cuidadoso.</p>
+                </div>
+                <div class="bg-chocolate-50 p-6 rounded-2xl border border-chocolate-200 shadow-sm">
+                    <div class="text-3xl mb-3">🏠</div>
+                    <h3 class="text-xl font-bold text-chocolate-800 mb-2">Hospedaje Nocturno</h3>
+                    <p class="text-chocolate-800 text-sm">Alojamiento cómodo y seguro durante la noche .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Planes y Precios -->
+    <section id="precios" class="py-16 bg-chocolate-100/60 border-y border-chocolate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-chocolate-600 font-semibold text-sm tracking-wider uppercase">Tarifas Transparentes</span>
+                <h2 class="text-3xl font-bold text-chocolate-900 mt-1">Planes y Precios Orientativos</h2>
+            </div>
+            <div class="bg-cream rounded-3xl shadow-sm border border-chocolate-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-chocolate-600 text-white text-sm">
+                                <th class="py-4 px-6 font-semibold">Servicio</th>
+                                <th class="py-4 px-6 font-semibold">Detalle / Duración</th>
+                                <th class="py-4 px-6 font-semibold text-right">Precio Orientativo</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-chocolate-200 text-sm text-chocolate-800">
+                            <tr>
+                                <td class="py-4 px-6 font-semibold">Paseo Estándar</td>
+                                <td class="py-4 px-6 text-chocolate-600">La 1 hora supervisada</td>
+                                <td class="py-4 px-6 text-right font-bold text-chocolate-700">$35.00</td>
+                            </tr>
+                            <tr class="bg-chocolate-40/40">
+                                <td class="py-4 px-6 font-semibold">Baño Completo</td>
+                                <td class="py-4 px-6 text-chocolate-600">Aseo y secado completo</td>
+                                <td class="py-4 px-6 text-right font-bold text-chocolate-700">$35.00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 font-semibold">Hospedaje Nocturno</td>
+                                <td class="py-4 px-6 text-chocolate-600">Estancia de 24 horas</td>
+                                <td class="py-4 px-6 text-right font-bold text-chocolate-700">$45.00 / noche</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros (Luna y Misión) -->
+    <section id="nosotros" class="py-16 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <div class="bg-chocolate-100 p-4 rounded-3xl border border-chocolate-700 shadow-lg">
+                        <img src="../fotos/luna.png" alt="Luna" class="rounded-2xl w-full h-72 object-cover">
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="text-chocolate-600 font-semibold text-sm tracking-wider uppercase">Nuestra Historia</span>
+                    <h2 class="text-3xl font-bold text-chocolate-900 leading-tight">El Legado de Luna y el Amor por los Animales</h2>
+                    <p class="text-chocolate-700 text-sm sm:text-base leading-relaxed">
+                        Este proyecto nace en memoria de mi fiel compañera, <strong>Luna</strong>, quien me enseñó el verdadero significado de la lealtad y el amor incondicional hacia los animales.. Su partida dejó una huella imborrable en mi vida y se convirtió en la inspiración fundamental para transformar este dolor en un propósito de vida: cuidar y proteger a otros animales con el mismo amor y dedicación que ella recibió.
+                    </p>
+                    <span class="text-chocolate-800 font-semibold text-sm tracking-wider uppercase">Nuestra Misión</h2></span>
+                    <p class="text-chocolate-700 text-sm sm:text-base leading-relaxed">
+                         Es promover el bienestar animal y fomentar una cultura de compasión y responsabilidad hacia los seres vivos. Trabajamos incansablemente para proteger a los animales abandonados y rescatados, brindándoles atención médica, alimentación y un hogar seguro.
+                    </p>
+                    <div class="p-4 bg-chocolate-100/70 border-l-4 border-chocolate-600 rounded-r-xl">
+                        <h4 class="font-bold text-chocolate-800 text-sm mb-1">🕊️ Compromiso Social</h4>
+                        <p class="text-xs sm:text-sm text-chocolate-800">Rechazamos enérgicamente el maltrato animal y apoyamos activamente el bienestar de las mascotas desprotegidas en Panamá Oeste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="py-16 bg-chocolate-100 border-t border-chocolate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-chocolate-600 font-semibold text-sm tracking-wider uppercase">Momentos Felices</span>
+                <h2 class="text-3xl font-bold text-chocolate-900 mt-1">Nuestra Galería de Huellitas</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-chocolate-700">
+                    <img src="../fotos/pelusa 33.jpg" alt="Foto 1" class="rounded-xl h-38 w-full object-cover">
+                    <p class="text-xs font-semibold text-chocolate-800 mt-2 text-center"> Su amor es sincero y su lealtad para toda la vida 🐾</p>
+                </div>
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-chocolate-700">
+                    <img src="../fotos/pelusaaa.jpg" alt="Foto 2" class="rounded-xl h-50 w-full object-cover">
+                    <p class="text-xs font-semibold text-chocolate-800 mt-2 text-center"> Cuidar de ellos es proteger la parte más noble de este mundo 🐶</p>
+                </div>
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-chocolate-700">
+                    <img src="../fotos/jone.jpg" alt="Foto 3" class="rounded-xl h-37 w-full object-cover">
+                    <p class="text-xs font-semibold text-chocolate-800 mt-2 text-center">Dales un refugio seguro y te devolverán una felicidad infinita.  🤎</p>
+                </div>
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-chocolate-700">
+                    <img src="../fotos/kiri.jpg" alt="Foto 4" class="rounded-x1 h-54 w-full object-cover">
+                    <p class="text-xs font-semibold text-chocolate-800 mt-2 text-center">     Ellos no hablan, pero su mirada lo dice todo con el corazón  💤</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-16 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-chocolate-600 font-semibold text-sm tracking-wider uppercase">¡Conectemos!</span>
+            <h2 class="text-3xl font-bold text-chocolate-900 mt-1 mb-4">Contacto y Reservas</h2>
+            <p class="text-chocolate-600 mb-6">Escríbenos directamente o visítanos en Chame Cabecera, Panamá Oeste.</p>
+            <a href="https://wa.me/50769217896" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-2xl shadow transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Chatear por WhatsApp (+507 6921-7896)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-chocolate-500 text-chocolate-100 py-8 text-center text-xs">
+        <p> &copy; 2026 Patas Felices - Chame, Panamá Oeste. En memoria de Luna 🐾 ❤️</p>
+    </footer>
+<img src="https://hits.sh/proyecto-web-98421.com.svg?label=Visitas&color=5c4033" alt="Contador de visitas" />
+</body>
+</html>
